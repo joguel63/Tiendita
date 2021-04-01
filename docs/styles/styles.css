@@ -38,7 +38,7 @@ footer {
   }
 
   header .logo {
-    width: 400px;
+    width: auto;
   }
 
   .nombreUsuario {
@@ -88,14 +88,14 @@ footer {
   /* container  */
   /*imagen*/
   .container {
-    max-width: 95%;
+    max-width: 98%;
     margin: 0 auto;
     margin-top: 8px;
     margin-bottom: 60px;
   }
   .gallery-module {
     width: 100%;
-    height: 200px;
+    height: 350px;
     background-image: url("https://cdn.pixabay.com/photo/2020/12/23/11/50/lavender-5854761__340.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,8 +172,8 @@ footer {
   .products{
     margin-top: 15px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;    
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     
   }
@@ -185,7 +185,7 @@ footer {
     transition: 0.3s;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 95%;
     max-width: 240px;
     height: 250px;
     padding: 15px;
