@@ -4,30 +4,57 @@ body {
 }
 
 footer {
-  
   width: 100%;
   padding: 5px 0 5px 0;
   background-color: #ad2a2a;
   margin-bottom: 0;
 }
 
-/* pantallas medianas */
-@media screen and (min-width: 993px) {
-  header {
-    display: flex;
-    background-color: #ad2a2a;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-  }
+.container {
+  max-width: 98%;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 60px;
+}
+.gallery-module {
+  width: 100%;
+  height: 350px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/12/23/11/50/lavender-5854761__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: 0.5s;
+  position: relative;
 
-  .show-bar {
-    display: none;
-  }
+  box-shadow: inset 1px 1px 50px #000;
+}
+
+.image-controler {
+  width: 100%;
+  height: 20px;
+  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+}
+.image-controler ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.image-controler ul li {
+  list-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 3px 3px 0px 0px;
+  display: inline-block;
+  border: solid 1.5px gray;
+  width: 5%;
+  max-width: 15px;
+  height: 0;
+  padding-bottom: 15px;
+  border-radius: 100%;
 }
 
 /* pantallas extra pequeñas */
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 567px) {
   header {
     display: flex;
     background-color: #ad2a2a;
@@ -92,43 +119,6 @@ footer {
     margin-top: 8px;
     margin-bottom: 60px;
   }
-  .gallery-module {
-    width: 100%;
-    height: 350px;
-    background-image: url("https://cdn.pixabay.com/photo/2020/12/23/11/50/lavender-5854761__340.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-duration: 0.5s;
-    position: relative;
-
-    box-shadow: inset 1px 1px 50px #000;
-  }
-
-  .image-controler {
-    width: 100%;
-    height: 20px;
-    margin: 0 auto;
-    position: absolute;
-    top: 80%;
-  }
-  .image-controler ul {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .image-controler ul li {
-    list-style: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 3px 3px 0px 0px;
-    display: inline-block;
-    border: solid 1.5px gray;
-    width: 5%;
-    max-width: 15px;
-    height: 0;
-    padding-bottom: 15px;
-    border-radius: 100%;
-  }
-
   /* aside */
   .aside {
     margin-top: 30px;
@@ -198,7 +188,7 @@ footer {
 
   .card-header .product-img {
     width: 100%;
-    height: 120px;
+    height: 41vw;
     object-fit: fill;
   }
   .card .card-body {
@@ -216,7 +206,6 @@ footer {
     justify-content: flex-end;
   }
 
-  
   /* footer */
   footer .footer {
     margin: 5px;
@@ -239,5 +228,200 @@ footer {
 
   footer .button:hover {
     background-color: #b54343;
+  }
+}
+
+/* pantallas pequeñas */
+
+@media screen and (min-width: 568px) {
+  header {
+    display: flex;
+    background-color: #ad2a2a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  header .logo {
+    width: auto;
+  }
+
+  .nombreUsuario {
+    margin-right: 3px;
+  }
+  .show-bar {
+    padding: 3px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .show-bar i {
+    padding: 7px;
+  }
+
+  .show-bar:hover {
+    background-color: #b54343;
+  }
+  .nav-bar.hidden {
+    display: none;
+  }
+  .nav-bar.active {
+    margin-top: -17px;
+    background-color: #ad2a2a;
+  }
+
+  .nav-bar ul {
+    padding: 0;
+  }
+  .nav-bar ul li {
+    padding: 5px;
+    list-style: none;
+  }
+  .nav-bar ul li a {
+    display: inline-block;
+    width: 98%;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .nav-bar ul li a:hover {
+    background-color: #b54343;
+  }
+  /* container  */
+  .container {
+    max-width: 98%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 60px;
+  }
+  /* aside */
+  .aside {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e0dcdc;
+    color: #8a8a8a;
+  }
+  .aside .title {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .aside .category {
+    text-align: center;
+    width: 50%;
+  }
+
+  .aside .select {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .aside .advance_search {
+    border: none;
+    border-radius: 3px;
+    background: #1565c0;
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    transition: 0.3s;
+    color: #f2f2f2;
+  }
+
+  .aside .advance_search:hover {
+    background-color: #7a1c1a;
+  }
+  .products {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* cards */
+
+  .card {
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    height: 0;
+    padding: 15px;
+    padding-bottom: 60vw;
+    
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card .card-header {
+    height: 0;
+    padding-bottom: 70%;
+    
+  }
+
+  .card-header .product-img {
+    width: 100%;
+    height: 30vw;
+    object-fit: fill;
+    
+  }
+  .card .card-body {
+    margin-top: 10px;
+    height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 35%;
+  }
+  .card .card-footer {
+    height: 30px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  /* footer */
+  footer .footer {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer .button {
+    padding: 3px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  footer .button:hover {
+    background-color: #b54343;
+  }
+}
+
+/* pantallas medianas */
+@media screen and (min-width: 993px) {
+  header {
+    display: flex;
+    background-color: #ad2a2a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .show-bar {
+    display: none;
   }
 }
