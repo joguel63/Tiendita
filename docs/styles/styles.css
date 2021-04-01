@@ -6,8 +6,9 @@ body {
 footer {
   
   width: 100%;
-
+  padding: 5px 0 5px 0;
   background-color: #ad2a2a;
+  margin-bottom: 0;
 }
 
 /* pantallas medianas */
