@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  background-color: #ad2a2a;
+}
+
+/* pantallas medianas */
+@media screen and (min-width: 993px) {
+  header {
+    display: flex;
+    background-color: #ad2a2a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  .show-bar {
+    display: none;
+  }
+}
+
+/* pantallas pequeñas */
+@media screen and (max-width: 992px) {
+  header {
+    display: flex;
+    background-color: #ad2a2a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  header .logo {
+    width: 400px;
+  }
+
+  .nombreUsuario {
+    margin-right: 3px;
+  }
+  .show-bar {
+    padding: 3px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .show-bar i {
+    padding: 7px;
+  }
+
+  .show-bar:hover {
+    background-color: #b54343;
+  }
+  .nav-bar.hidden {
+    display: none;
+  }
+  .nav-bar.active {
+    margin-top: -17px;
+    background-color: #ad2a2a;
+  }
+
+  .nav-bar ul {
+    padding: 0;
+  }
+  .nav-bar ul li {
+    padding: 5px;
+    list-style: none;
+  }
+  .nav-bar ul li a {
+    display: inline-block;
+    width: 98%;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .nav-bar ul li a:hover {
+    background-color: #b54343;
+  }
+  /* container  */
+  /*imagen*/
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 60px;
+  }
+  .gallery-module {
+    width: 100%;
+    height: 200px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/12/23/11/50/lavender-5854761__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+    position: relative;
+
+    box-shadow: inset 1px 1px 50px #000;
+  }
+
+  .image-controler {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 80%;
+  }
+  .image-controler ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .image-controler ul li {
+    list-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 3px 3px 0px 0px;
+    display: inline-block;
+    border: solid 1.5px gray;
+    width: 5%;
+    max-width: 15px;
+    height: 0;
+    padding-bottom: 15px;
+    border-radius: 100%;
+  }
+
+  /* aside */
+  .aside {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #e0dcdc;
+    color: #8a8a8a;
+  }
+  .aside .title {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .aside .category {
+    text-align: center;
+    width: 50%;
+  }
+
+  .aside .select {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .aside .advance_search {
+    border: none;
+    border-radius: 3px;
+    background: #1565c0;
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    transition: 0.3s;
+    color: #f2f2f2;
+  }
+
+  .aside .advance_search:hover {
+    background-color: #7a1c1a;
+  }
+  /* products */
+  .products{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    
+  }
+  /* cards */
+
+  .card {
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 240px;
+    height: 250px;
+    padding: 15px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card .card-header {
+    height: 0;
+    padding-bottom: 50%;
+  }
+
+  .card-header .product-img {
+    width: 100%;
+    height: 120px;
+    object-fit: fill;
+  }
+  .card .card-body {
+    margin-top: 10px;
+    height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 35%;
+  }
+  .card .card-footer {
+    height: 0;
+    text-align: right;
+    padding-right: 5px;
+    padding-bottom: 15%;
+  }
+  /* footer */
+  footer .footer {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  footer .button {
+    padding: 3px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  footer .button:hover {
+    background-color: #b54343;
+  }
+}
